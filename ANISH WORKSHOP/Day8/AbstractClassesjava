@@ -1,0 +1,46 @@
+/*
+ Abstract classes:
+ It is a restricted class that cannot be used to create
+ objects.
+
+ abstract class shape{
+    int color;
+
+    // An abstract function
+    abstract void draw();
+ }
+ */
+public class AbstractClasses{
+    public static void main(String[] args){
+        // not possible
+        // GenericShape shap = new GenericShape()
+        GenericShape shape = new Mycircle();
+    }
+
+    private static void doStuff(GenericShape shape){
+        shape.draw();
+        shape.move(10,)
+    }
+}
+
+abstract class GenericShape{
+    int me = 10;
+    String property = "hello";
+
+    abstract void draw();
+    abstract void move(int x,int y);
+
+    public void hello(){
+        System.out.println("hello World");
+    }
+}
+
+class class Mycircle extends GenericShape{
+    void draw(){
+        System.out.println("i am drawing circle")
+    }
+
+    void move(int x, int y){
+        System.out.println("moving to:" + x + ";" + y)
+    }
+}
